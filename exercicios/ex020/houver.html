@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        div > p { /*paragrafo dentro da div. filho de uma div. SERVE PRA ESCONDE TEXTOS.  uso esse comando pra esconder uma frase */
+            display: none;
+
+        }
+        div:hover > p { /* para aparecer quando passar o mouse em cima */
+            display: block;
+            color: white;
+            background-color: red;
+        }
+
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de hover</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>
+        passe o mouse aqui
+        <p>texto escondido...</p>
+    </div>
+    <p>fim do exemplo</p>
+</body>
+</html>

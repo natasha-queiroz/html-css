@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(131, 93, 93);
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: aqua;
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;
+
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            
+            
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 2px 5px black;
+        }
+
+        article {
+            background-color: lightgray;
+
+        }
+
+        article > aside {
+            background-color: gray;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p { /*pra o paragrafo ficar sem margin*/
+            margin: 0px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>   <!--cabeçalho-->
+        <h1>meu site</h1>
+        <nav>   <!--pra menu-->
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>    <!--comteudo principal-->
+        
+
+        <section id="assuntos">
+            <p>tecnologia</p>
+        </section>
+        <section id="noticias">  <!--section é seção-->
+            <article>   <!---->
+                <h2>noticias sobre o brasil</h2>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, dignissimos? Beatae sunt ab magnam eius delectus, deleniti repellat debitis veritatis harum enim illo dolorem eum libero quia dolore consequatur fuga.</p>
+
+                <aside>  <!--conteudo a parte posso usar pra um conteudo que tem textos um do lado do outro-->
+                    <p>artigo pelo mim</p>
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>  <!--rodaper do site -->
+        <p>desenvolvido pela natasha</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

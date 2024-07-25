@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(34, 96, 66);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+h1{
+    color: blueviolet;
+    background-color: yellow;
+}
+h2{
+    color: red;
+}
+p{
+    text-align: justify;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--depois a pequena-->
+
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!-- depois puxa a Media-->
+        <img src="imagens/foto-g.png" alt="imagem flexivel"> <!--primeiro coloca essa tag com a foto-->
+
+        <h1>Reproduzindo audio</h1>
+        <p>vamos aprender a reproduzir audios em HTML</p>
+        <audio src="midia/happy-mistake.mp3" controls autoplay loop ></audio> 
+
+        <audio>
+            <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+            <source src="midia/happy-mistake.mp3.ogg" type="audio/ogg">
+        </audio>
+        
+        
+    </picture>
+</body>
+</html>

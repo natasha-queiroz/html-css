@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+
+        /* seletores personalizados 
+          # =id
+          . = class
+          : = pseudo-class
+          :: = pesudo-element
+          > = filho
+        */
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        a {
+            text-decoration: none; /*pra tirar o sublinhado debaixo da palavra*/
+        }
+
+        a:visited { /* 'visid': é site visitado*/
+            color: darkorchid;
+            
+        }
+
+        a:hover {
+            color: yellow;
+
+        }
+
+        a:active { /* link clicavel. */
+            color: springgreen;
+        }
+
+        a::after { /*tag pra colocar o nome link e dizer que é link depois do conteudo*/
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <lu>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">repositorio github</a></li> <!-- TARGET="_BLANK: PARA O LINK SER ABERTO EM OUTRA ABA DO NAVEGADOR E NAO NA MESM ABA" -->
+        
+        <li><a href="https://youtube.com/cursoemvideo" >canal do youtieb</a></li>
+
+        <li><a href="https://www.cursoemvideo.com">site do curso em video</a></li>
+
+        <li><a href="https://www.youtube.com/watch?v=tUNbhYcY9Ik&t=743s">jorge</a></li>
+
+        <li><a href="https://www.youtube.com/watch?v=p2XaXklbx_o">minha musica</a></li>
+    </lu>
+    <lu>
+        <li><a href="github.com/natasha-queiroz">ghhhf</a></li>
+    </lu>
+</body>
+</html>
