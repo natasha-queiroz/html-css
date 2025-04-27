@@ -9,6 +9,7 @@
     <h1>Exemplo de formulario</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <fieldset>
+            <legend>Dados pessoais</legend>
             <p>
                 <label for="inome">Nome</label>
                 <input type="text" name="nome" id="nome" minlength="5" maxlength="20" required>
@@ -19,7 +20,7 @@
             </p>
             <p>
                 <label for="itel">Telefone</label>
-                <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(xx) xxxxx-xxxx" required>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="\(d{2}\)\d{4,5}-\d{4}$"placeholder="(xx)xxxxx-xxxx" required>
             </p>
         </fieldset>
 
