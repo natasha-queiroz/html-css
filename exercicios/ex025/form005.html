@@ -7,10 +7,19 @@
 </head>
 <body>
     <h1>Exemplo de Formulario</h1>
-
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> Basquete <br> 
+            <input type="checkbox" name="esfut" id="iesfut"> Futebol <br>
+            <input type="checkbox" name="esfut" id="iesfut"> Nataçõa <br>
+            <input type="checkbox" name="esfut" id="iesfut"> Tenis <br>
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
